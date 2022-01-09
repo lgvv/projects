@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct BookSearchResponseModel: Codable {
+    var items: [Book] = []
+}

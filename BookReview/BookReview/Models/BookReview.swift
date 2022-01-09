@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct BookReview: Codable {
+    let title: String
+    let contents: String
+    let imageURL: URL?
+}

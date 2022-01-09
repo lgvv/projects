@@ -5,13 +5,13 @@
 //  Created by Hamlit Jason on 2022/01/09.
 //
 
-import Foundation
+import XCTest
 @testable import BookReview
 
-final class MockUserDefaultManager: UserDefaultsManagerProtocol {
+final class MockUserDefaultsManager: UserDefaultsManagerProtocol {
     
     var isCalledGetReviews = false
-    var isSetReview = false
+    var isCalledSetReview = false
     
     func getReviews() -> [BookReview] {
         isCalledGetReviews = true
@@ -20,7 +20,7 @@ final class MockUserDefaultManager: UserDefaultsManagerProtocol {
     }
     
     func setReview(_ newValue: BookReview) {
-        isSetReview = true
+        isCalledSetReview = true
     }
     
 }

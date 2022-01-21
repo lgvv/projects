@@ -25,7 +25,8 @@ final class SearchBookPresenter: NSObject {
     
     private var books: [Book] = []
     
-    init(viewContoller: SearchBookViewContoller,
+    init(
+        viewContoller: SearchBookProtocol,
          delegate: SearchBookDelegate
     ) {
         self.viewContoller = viewContoller

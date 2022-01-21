@@ -46,5 +46,4 @@ final class MockReviewWriteViewController: ReviewWriteProtocol {
         isCalledupdateViews = true
     }
     
-    
 }

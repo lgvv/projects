@@ -16,6 +16,9 @@
 		B19629FC278ADE5100C0F663 /* MockUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19629FB278ADE5100C0F663 /* MockUserDefaultManager.swift */; };
 		B1962A00278AEEDE00C0F663 /* MockReviewWirtePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19629FF278AEEDE00C0F663 /* MockReviewWirtePresenterTest.swift */; };
 		B1962A02278AF1CF00C0F663 /* ReviewWritePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1962A01278AF1CF00C0F663 /* ReviewWritePresenterTest.swift */; };
+		B197E87B279A43F100BA9D18 /* SearchBookPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197E87A279A43F100BA9D18 /* SearchBookPresenterTest.swift */; };
+		B197E87D279A44F300BA9D18 /* MockSearchBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197E87C279A44F300BA9D18 /* MockSearchBookPresenter.swift */; };
+		B197E87F279A59A100BA9D18 /* MockBookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197E87E279A59A100BA9D18 /* MockBookSearchManager.swift */; };
 		B1993ADD2788938D005513D3 /* BookSearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1993ADC2788938D005513D3 /* BookSearchRequestModel.swift */; };
 		B1993AE1278893FA005513D3 /* BookSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1993AE0278893FA005513D3 /* BookSearchResponseModel.swift */; };
 		B1993AE3278894A7005513D3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1993AE2278894A7005513D3 /* Book.swift */; };
@@ -67,6 +70,9 @@
 		B19629FB278ADE5100C0F663 /* MockUserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultManager.swift; sourceTree = "<group>"; };
 		B19629FF278AEEDE00C0F663 /* MockReviewWirtePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewWirtePresenterTest.swift; sourceTree = "<group>"; };
 		B1962A01278AF1CF00C0F663 /* ReviewWritePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTest.swift; sourceTree = "<group>"; };
+		B197E87A279A43F100BA9D18 /* SearchBookPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookPresenterTest.swift; sourceTree = "<group>"; };
+		B197E87C279A44F300BA9D18 /* MockSearchBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchBookPresenter.swift; sourceTree = "<group>"; };
+		B197E87E279A59A100BA9D18 /* MockBookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookSearchManager.swift; sourceTree = "<group>"; };
 		B1993ADC2788938D005513D3 /* BookSearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchRequestModel.swift; sourceTree = "<group>"; };
 		B1993AE0278893FA005513D3 /* BookSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResponseModel.swift; sourceTree = "<group>"; };
 		B1993AE2278894A7005513D3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 				B19629F9278ADE1300C0F663 /* MockReviewListViewController.swift */,
 				B19629FB278ADE5100C0F663 /* MockUserDefaultManager.swift */,
 				B19629FF278AEEDE00C0F663 /* MockReviewWirtePresenterTest.swift */,
+				B197E87C279A44F300BA9D18 /* MockSearchBookPresenter.swift */,
+				B197E87E279A59A100BA9D18 /* MockBookSearchManager.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			children = (
 				B1DA056F27873D120082C61C /* ReviewListPresenterTests.swift */,
 				B1962A01278AF1CF00C0F663 /* ReviewWritePresenterTest.swift */,
+				B197E87A279A43F100BA9D18 /* SearchBookPresenterTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -535,8 +544,11 @@
 				B1962A00278AEEDE00C0F663 /* MockReviewWirtePresenterTest.swift in Sources */,
 				B19629FA278ADE1300C0F663 /* MockReviewListViewController.swift in Sources */,
 				B19629FC278ADE5100C0F663 /* MockUserDefaultManager.swift in Sources */,
+				B197E87D279A44F300BA9D18 /* MockSearchBookPresenter.swift in Sources */,
+				B197E87F279A59A100BA9D18 /* MockBookSearchManager.swift in Sources */,
 				B1DA057027873D120082C61C /* ReviewListPresenterTests.swift in Sources */,
 				B1962A02278AF1CF00C0F663 /* ReviewWritePresenterTest.swift in Sources */,
+				B197E87B279A43F100BA9D18 /* SearchBookPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

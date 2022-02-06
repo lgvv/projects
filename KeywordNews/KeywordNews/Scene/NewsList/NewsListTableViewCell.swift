@@ -9,6 +9,7 @@ import Foundation
 import SnapKit
 import Then
 import UIKit
+import TTGTags
 
 final class NewsListTableViewCell: UITableViewCell {
     static let identifier = "NewsListTableViewCell"
@@ -37,6 +38,7 @@ final class NewsListTableViewCell: UITableViewCell {
         dateLabel.text = "20220205"
     }
 }
+
 private extension NewsListTableViewCell {
     // 셀 크기를 height으로 지정해주지 않아도 자동으로 잡힘!
     func setupLayout() {
@@ -67,3 +69,4 @@ private extension NewsListTableViewCell {
         }
     }
 }
+

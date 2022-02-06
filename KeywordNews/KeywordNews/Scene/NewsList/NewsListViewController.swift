@@ -27,6 +27,13 @@ class NewsListViewController: UIViewController {
             NewsListTableViewCell.self,
             forCellReuseIdentifier: NewsListTableViewCell.identifier
         )
+
+        // 헤더등록 코드가 조금 다르다.
+        tableView.register(
+            NewsListTableViewHeaderView.self,
+            forHeaderFooterViewReuseIdentifier: NewsListTableViewHeaderView.identifier
+        )
+        
         tableView.refreshControl = refreshControl
         
         return tableView

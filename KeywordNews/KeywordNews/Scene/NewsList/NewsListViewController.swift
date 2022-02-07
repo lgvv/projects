@@ -42,11 +42,14 @@ class NewsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+        
+        NewsSearchManager().request(from: "아이폰", start: 1, display: 20) { newsArray in
+            print(newsArray)
+        }
     }
 
 
 }
-
 extension NewsListViewController: NewsListProtocol {
     func setupNavigationBar() {
         navigationItem.title = "NEWS"
@@ -65,6 +68,10 @@ extension NewsListViewController: NewsListProtocol {
         refreshControl.endRefreshing()
     }
     
+    func moveToNewsWebViewController() {
+        let newWebController = NewWebViewContrller()
+        navigationController?.pushViewController(newWebController, animated: true)
+    }
 }
 
 

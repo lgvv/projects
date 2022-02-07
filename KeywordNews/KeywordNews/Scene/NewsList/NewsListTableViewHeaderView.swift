@@ -10,14 +10,26 @@ import UIKit
 import SnapKit
 import TTGTags
 
+protocol NewsListTableViewHeaderViewDelegate: AnyObject {
+    func didSelectTag(_ selectedIndex: Int)
+}
+
 final class NewsListTableViewHeaderView: UITableViewHeaderFooterView {
     static let identifier = "NewsListTableViewHeaderView"
 
     private lazy var tagCollectionView = TTGTextTagCollectionView()
     
-    private var tags: [String] = ["IT", "아이폰", "개발", "개발자", "판교", "게임", "앱개발", "강남", "스타트업"]
+    private weak var delegate: NewsListTableViewHeaderViewDelegate?
     
-    func setup() {
+    private var tags: [String] = []
+    
+    func setup(
+        tags: [String],
+        delegate: NewsListTableViewHeaderViewDelegate
+    ) {
+        self.tags = tags
+        self.delegate = delegate
+        
         contentView.backgroundColor = .systemBackground
         
         setupTagCollectionViewLayout()
@@ -28,9 +40,17 @@ final class NewsListTableViewHeaderView: UITableViewHeaderFooterView {
 
 extension NewsListTableViewHeaderView: TTGTextTagCollectionViewDelegate {
     func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, didTap tag: TTGTextTag!, at index: UInt) {
+        print("textTagCollectionView \(tag)")
         guard tag.selected else { return } // 태그가 셀렉 되었을 때만 불려지게끔 필터링 해주기 -> 태그가 셀렉되지 않은 상태로 조건이 변경될 때도 불려지기 때문에
         
-        print(tags[Int(index)])
+        delegate?.didSelectTag(Int(index))
+    }
+    
+    func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, canTap tag: TTGTextTag!, at index: UInt) -> Bool {
+        print("canTap")
+        // TODO: UI의 자연스런 업데이트를 내가 한번 만들어보자
+        
+        return true
     }
 }
 

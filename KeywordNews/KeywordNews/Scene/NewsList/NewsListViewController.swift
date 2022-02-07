@@ -68,9 +68,13 @@ extension NewsListViewController: NewsListProtocol {
         refreshControl.endRefreshing()
     }
     
-    func moveToNewsWebViewController() {
-        let newWebController = NewWebViewContrller()
+    func moveToNewsWebViewController(with news: News) {
+        let newWebController = NewWebViewContrller(news: news)
         navigationController?.pushViewController(newWebController, animated: true)
+    }
+    
+    func reloadTableView() {
+        tableView.reloadData()
     }
 }
 

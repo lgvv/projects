@@ -23,6 +23,7 @@
 		B1A65BD727B02FD900B59587 /* NewsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A65BD627B02FD900B59587 /* NewsRequestModel.swift */; };
 		B1A65BD927B02FE400B59587 /* NewsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A65BD827B02FE400B59587 /* NewsResponseModel.swift */; };
 		B1A65BDC27B0308100B59587 /* NewsSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A65BDB27B0308100B59587 /* NewsSearchManager.swift */; };
+		B1E4844C27B17ECE007147A0 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4844B27B17ECE007147A0 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B1A65BD627B02FD900B59587 /* NewsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequestModel.swift; sourceTree = "<group>"; };
 		B1A65BD827B02FE400B59587 /* NewsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponseModel.swift; sourceTree = "<group>"; };
 		B1A65BDB27B0308100B59587 /* NewsSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchManager.swift; sourceTree = "<group>"; };
+		B1E4844B27B17ECE007147A0 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		BD41BE787C012465B2FDB44A /* Pods-KeywordNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeywordNews.debug.xcconfig"; path = "Target Support Files/Pods-KeywordNews/Pods-KeywordNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,12 +102,13 @@
 			children = (
 				B1A5CC3527AE2F9F006D178A /* AppDelegate.swift */,
 				B1A5CC3727AE2F9F006D178A /* SceneDelegate.swift */,
+				B1A65BDD27B030FF00B59587 /* Manager */,
 				B1A5CC4E27AE3483006D178A /* Scene */,
 				B1A5CC3E27AE2FA1006D178A /* Assets.xcassets */,
 				B1A5CC4027AE2FA1006D178A /* LaunchScreen.storyboard */,
 				B1A5CC4327AE2FA1006D178A /* Info.plist */,
 				B1A65BDA27B02FE800B59587 /* Models */,
-				B1A65BDD27B030FF00B59587 /* Manager */,
+				B1E4844B27B17ECE007147A0 /* String+.swift */,
 			);
 			path = KeywordNews;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				B1A65BDC27B0308100B59587 /* NewsSearchManager.swift in Sources */,
 				B1A65BD927B02FE400B59587 /* NewsResponseModel.swift in Sources */,
 				B1A65BD727B02FD900B59587 /* NewsRequestModel.swift in Sources */,
+				B1E4844C27B17ECE007147A0 /* String+.swift in Sources */,
 				B1A5CC3627AE2F9F006D178A /* AppDelegate.swift in Sources */,
 				B1A5CC3827AE2F9F006D178A /* SceneDelegate.swift in Sources */,
 				B1A5CC4A27AE3463006D178A /* NewsListPresenter.swift in Sources */,

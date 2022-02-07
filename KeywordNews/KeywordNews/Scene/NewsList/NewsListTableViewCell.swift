@@ -27,15 +27,15 @@ final class NewsListTableViewCell: UITableViewCell {
         $0.textColor = .secondaryLabel
     }
     
-    func setup() {
+    func setup(news: News) {
         setupLayout()
         
         accessoryType = .disclosureIndicator
         selectionStyle = .none
         
-        titleLabel.text = "기사제목"
-        descriptionLabel.text = "기사내용"
-        dateLabel.text = "20220205"
+        titleLabel.text = news.title.htmlToString
+        descriptionLabel.text = news.description.htmlToString
+        dateLabel.text = news.pubDate.htmlToString
     }
 }
 

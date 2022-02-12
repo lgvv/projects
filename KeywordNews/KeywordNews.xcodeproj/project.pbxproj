@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6BE1A19C79F563ADDD8CC1D6 /* Pods_KeywordNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6062D9E7E4A87EABB26BE391 /* Pods_KeywordNews.framework */; };
+		B1985BE327B2D99F0039DE0E /* NewsListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1985BE227B2D99F0039DE0E /* NewsListPresenterTest.swift */; };
+		B1985BE627B2DB0D0039DE0E /* MockNewsSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1985BE527B2DB0D0039DE0E /* MockNewsSearchManager.swift */; };
+		B1985BE827B2DB2E0039DE0E /* MockNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1985BE727B2DB2E0039DE0E /* MockNewsListViewController.swift */; };
 		B1A5CC3627AE2F9F006D178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5CC3527AE2F9F006D178A /* AppDelegate.swift */; };
 		B1A5CC3827AE2F9F006D178A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5CC3727AE2F9F006D178A /* SceneDelegate.swift */; };
 		B1A5CC3A27AE2F9F006D178A /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5CC3927AE2F9F006D178A /* NewsListViewController.swift */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		12F2867BE48AD16880376BF8 /* Pods-KeywordNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeywordNews.release.xcconfig"; path = "Target Support Files/Pods-KeywordNews/Pods-KeywordNews.release.xcconfig"; sourceTree = "<group>"; };
 		6062D9E7E4A87EABB26BE391 /* Pods_KeywordNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeywordNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1985BE227B2D99F0039DE0E /* NewsListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenterTest.swift; sourceTree = "<group>"; };
+		B1985BE527B2DB0D0039DE0E /* MockNewsSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsSearchManager.swift; sourceTree = "<group>"; };
+		B1985BE727B2DB2E0039DE0E /* MockNewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsListViewController.swift; sourceTree = "<group>"; };
 		B1A5CC3227AE2F9F006D178A /* KeywordNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeywordNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A5CC3527AE2F9F006D178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A5CC3727AE2F9F006D178A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +85,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B1985BE127B2D9250039DE0E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B1E4844B27B17ECE007147A0 /* String+.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B1985BE427B2D9A40039DE0E /* KeywordNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1985BE227B2D99F0039DE0E /* NewsListPresenterTest.swift */,
+				B1985BE527B2DB0D0039DE0E /* MockNewsSearchManager.swift */,
+				B1985BE727B2DB2E0039DE0E /* MockNewsListViewController.swift */,
+			);
+			name = KeywordNewsTests;
+			sourceTree = "<group>";
+		};
 		B1A5CC2927AE2F9F006D178A = {
 			isa = PBXGroup;
 			children = (
 				B1A5CC3427AE2F9F006D178A /* KeywordNews */,
+				B1985BE427B2D9A40039DE0E /* KeywordNewsTests */,
 				B1A5CC3327AE2F9F006D178A /* Products */,
 				3F5D3360DBF9C814198EA397 /* Pods */,
 				17263244DCC09FF31E9971B9 /* Frameworks */,
@@ -100,15 +125,15 @@
 		B1A5CC3427AE2F9F006D178A /* KeywordNews */ = {
 			isa = PBXGroup;
 			children = (
-				B1A5CC3527AE2F9F006D178A /* AppDelegate.swift */,
-				B1A5CC3727AE2F9F006D178A /* SceneDelegate.swift */,
+				B1985BE127B2D9250039DE0E /* Extension */,
+				B1A65BDA27B02FE800B59587 /* Models */,
 				B1A65BDD27B030FF00B59587 /* Manager */,
 				B1A5CC4E27AE3483006D178A /* Scene */,
 				B1A5CC3E27AE2FA1006D178A /* Assets.xcassets */,
 				B1A5CC4027AE2FA1006D178A /* LaunchScreen.storyboard */,
 				B1A5CC4327AE2FA1006D178A /* Info.plist */,
-				B1A65BDA27B02FE800B59587 /* Models */,
-				B1E4844B27B17ECE007147A0 /* String+.swift */,
+				B1A5CC3527AE2F9F006D178A /* AppDelegate.swift */,
+				B1A5CC3727AE2F9F006D178A /* SceneDelegate.swift */,
 			);
 			path = KeywordNews;
 			sourceTree = "<group>";
@@ -288,11 +313,14 @@
 				B1A5CC5927AE6493006D178A /* NewsListTableViewHeaderView.swift in Sources */,
 				B1A65BDC27B0308100B59587 /* NewsSearchManager.swift in Sources */,
 				B1A65BD927B02FE400B59587 /* NewsResponseModel.swift in Sources */,
+				B1985BE627B2DB0D0039DE0E /* MockNewsSearchManager.swift in Sources */,
 				B1A65BD727B02FD900B59587 /* NewsRequestModel.swift in Sources */,
 				B1E4844C27B17ECE007147A0 /* String+.swift in Sources */,
+				B1985BE827B2DB2E0039DE0E /* MockNewsListViewController.swift in Sources */,
 				B1A5CC3627AE2F9F006D178A /* AppDelegate.swift in Sources */,
 				B1A5CC3827AE2F9F006D178A /* SceneDelegate.swift in Sources */,
 				B1A5CC4A27AE3463006D178A /* NewsListPresenter.swift in Sources */,
+				B1985BE327B2D99F0039DE0E /* NewsListPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

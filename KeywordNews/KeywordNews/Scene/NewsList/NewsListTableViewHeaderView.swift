@@ -22,6 +22,7 @@ final class NewsListTableViewHeaderView: UITableViewHeaderFooterView {
     private weak var delegate: NewsListTableViewHeaderViewDelegate?
     
     private var tags: [String] = []
+
     
     func setup(
         tags: [String],
@@ -48,10 +49,10 @@ extension NewsListTableViewHeaderView: TTGTextTagCollectionViewDelegate {
     
     func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, canTap tag: TTGTextTag!, at index: UInt) -> Bool {
         print("canTap")
-        // TODO: UI의 자연스런 업데이트를 내가 한번 만들어보자
         
         return true
     }
+    
 }
 
 private extension NewsListTableViewHeaderView {

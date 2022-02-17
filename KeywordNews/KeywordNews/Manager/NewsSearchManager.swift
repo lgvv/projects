@@ -28,8 +28,8 @@ struct NewsSearchManager: NewsSearchManagerProtocol {
 
         let parameters = NewsRequestModel(start: start, display: display, query: keyword)
         let headers: HTTPHeaders = [
-            "X-Naver-Client-id": "l2RlfEcN6tSNYylt_sAW",
-            "X-Naver-Client-Secret": "XAcIfBwm0t"
+            "X-Naver-Client-id": "{API KEY}",
+            "X-Naver-Client-Secret": "{API KEY}"
         ]
 
         AF
